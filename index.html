@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whisky 🐾</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Baloo 2', cursive;
+      background: linear-gradient(to top, #c2ffd8, #fbd786);
+      overflow: hidden;
+    }
+
+    /* Floating bubbles (subtle animation) */
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.3);
+      animation: floatUp 15s infinite;
+    }
+
+    .bubble:nth-child(1) { width: 40px; height: 40px; left: 20%; bottom: -60px; }
+    .bubble:nth-child(2) { width: 25px; height: 25px; left: 50%; bottom: -80px; animation-delay: 5s; }
+    .bubble:nth-child(3) { width: 35px; height: 35px; left: 80%; bottom: -70px; animation-delay: 8s; }
+
+    @keyframes floatUp {
+      to {
+        transform: translateY(-120vh);
+        opacity: 0;
+      }
+    }
+
+    .title {
+      font-size: 3em;
+      color: #444;
+      letter-spacing: 2px;
+      z-index: 1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Background bubbles -->
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+
+  <div class="title">
+    Whisky 🐾
+  </div>
+
+</body>
+</html>
