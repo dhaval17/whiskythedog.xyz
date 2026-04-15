@@ -45,11 +45,24 @@
       }
     }
 
+/* Updated Title styling for prominence */
     .title {
-      font-size: 3em;
-      color: #444;
-      letter-spacing: 2px;
-      z-index: 1;
+      font-size: 5em; /* Significantly larger (was 3em) */
+      color: gold; /* Richer, deep brown for contrast and theme (was #444) */
+      letter-spacing: 3px; /* Slightly more spaced out (was 2px) */
+      font-weight: 800; /* Using the bolder font weight */
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.4); /* Subtle text shadow for depth */
+      z-index: 100; /* High z-index to stay on top of everything */
+      text-transform: uppercase; /* Make it more emphatic */
+      display: inline-flex;
+      align-items: center;
+      gap: 15px; /* Add space around the paw print */
+      cursor: default;
+    }
+
+    /* Ensure paw prints look good (can be slightly smaller if needed) */
+    .title span {
+      font-size: 0.8em;
     }
 
   </style>
@@ -62,7 +75,7 @@
   <div class="bubble"></div>
 
   <div class="title">
-    Whisky 🐾
+    Whisky <span>🐾</span>
   </div>
 
 </body>
